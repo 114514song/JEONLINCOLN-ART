@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>전주링컨 소개</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      color: #1e3d7a;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    a {
+      display: inline-block;
+      margin-top: 2rem;
+      text-decoration: none;
+      color: white;
+      background: #4a90e2;
+      padding: 0.6rem 1.2rem;
+      border-radius: 5px;
+    }
+    /* 新增视频容器样式 */
+    .video-container {
+      margin-top: 2rem;
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9比例 */
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      background: #000;
+      border-radius: 8px;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>전주링컨학교 소개</h1>
+  <p>
+    전주링컨은 창의적 사고와 인성 교육을 중시하는 교육기관으로, 학생들의 잠재력을 최대한 발휘할 수 있도록 다양한 프로그램과 맞춤형 교육을 제공합니다.
+  </p>
+  <p>
+    우리 학교는 글로벌 리더를 양성하기 위해 외국어 교육, 예술 활동, 과학 실습 등 다양한 교과 및 비교과 활동을 지원하고 있습니다.
+  </p>
+
+  <!-- 视频嵌入区域 -->
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/9syNZwdq7gA" 
+            title="전주링컨 소개 영상" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+  </div>
+
+  <a href="index.html">← 메인 페이지로 돌아가기</a>
+</body>
+</html>

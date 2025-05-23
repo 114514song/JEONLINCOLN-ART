@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>전체 작품 보기</title>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 2rem;
+      background: #fafafa;
+    }
+    h1 {
+      text-align: center;
+      color: #1e3d7a;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .gallery img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .back-button {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .back-button a {
+      background-color: #4a90e2;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>전주링컨 미술부 - 전체 작품 보기</h1>
+  <div class="gallery">
+    <img src="https://picsum.photos/id/1060/200/150" alt="art1" />
+    <img src="https://picsum.photos/id/1070/200/150" alt="art2" />
+    <img src="https://picsum.photos/id/1080/200/150" alt="art3" />
+    <img src="https://picsum.photos/id/1090/200/150" alt="art4" />
+    <img src="https://picsum.photos/id/1100/200/150" alt="art5" />
+    <img src="https://picsum.photos/id/1110/200/150" alt="art6" />
+  </div>
+  <div class="back-button">
+    <a href="index.html">← 돌아가기</a>
+  </div>
+</body>
+</html>

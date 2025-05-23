@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>전주링컨 미술부</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      color: #333;
+    }
+    header {
+      background: url('1747972816522.png');
+      color: white;
+      padding: 2rem 1rem 1rem;
+      text-align: center;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+    .nav-buttons {
+      margin-top: 1rem;
+    }
+    .nav-buttons a {
+      display: inline-block;
+      background-color: #ffffffcc;
+      color: #1e3d7a;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 0.6rem 1.2rem;
+      margin: 0 0.5rem;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+    .nav-buttons a:hover {
+      background-color: #ffffff;
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 2.8rem;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem 2rem 3rem 2rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    section {
+      margin-bottom: 2.5rem;
+    }
+    h2 {
+      font-size: 1.9rem;
+      margin-bottom: 1rem;
+      border-bottom: 3px solid #4a90e2;
+      padding-bottom: 0.3rem;
+    }
+    p {
+      line-height: 1.6;
+    }
+    .members {
+      display: block;
+    }
+    .member {
+      margin-bottom: 1.2rem;
+    }
+    .member strong {
+      display: block;
+      font-size: 1.3rem;
+      color: #1e3d7a;
+    }
+    .member p {
+      font-size: 1rem;
+      margin: 0.3rem 0 0 0;
+    }
+    ul.activities {
+      list-style: inside disc;
+      color: #4a90e2;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    ul.activities li {
+      margin-bottom: 0.7rem;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 160px;
+      height: 120px;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+      transition: transform 0.25s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+    .contact {
+      text-align: center;
+      font-weight: 600;
+      color: #4a90e2;
+    }
+    .contact p {
+      margin: 0.3rem 0;
+      font-size: 1.1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background: #4a90e2;
+      color: white;
+      font-weight: 600;
+    }
+    @media (max-width: 600px) {
+      .gallery {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>전주링컨 미술부</h1>
+    <div class="nav-buttons">
+      <a href="all-artworks.html">전체 작품 보기</a>
+      <a href="school-info.html">전주링컨 소개</a>
+    </div>
+  </header>
+  <main>
+    <section>
+      <h2>부서 소개</h2>
+      <p>미술부는 학교 내 예술적 영감을 가진 젊은이들이 모여 다양한 예술 표현을 탐구하며 창작 열정을 불러일으키는 곳입니다.</p>
+    </section>
+    <section>
+      <h2>멤버 소개</h2>
+      <div class="members">
+        <div class="member">
+          <strong>부장: 이영민</strong>
+          <p>미술부 부장, 조직 및 조정 전문가입니다.</p>
+        </div>
+        <div class="member">
+          <strong>송지성</strong>
+          <p>디자인 전문가입니다.</p>
+        </div>
+        <div class="member">
+          <strong>배한서</strong>
+          <p>디지털 디자인과 일러스트를 담당합니다.</p>
+        </div>
+        <div class="member">
+          <strong>이정윤</strong>
+          <p>수채화 및 창의적 수공예 전문가입니다.</p>
+        </div>
+        <div class="member">
+          <strong>알리샤</strong>
+          <p>사진 및 시각 예술 담당입니다.</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>최근 활동</h2>
+      <ul class="activities">
+        <li>학교 동아리 포스터</li>
+        <li>학교 홍보 사진</li>
+        <li>부원 작품 전시</li>
+      </ul>
+    </section>
+    <section>
+      <h2>작품 전시</h2>
+      <div class="gallery">
+        <img src="https://picsum.photos/id/1040/160/120" alt="작품1" />
+        <img src="https://picsum.photos/id/1020/160/120" alt="작품2" />
+        <img src="https://picsum.photos/id/1050/160/120" alt="작품3" />
+        <img src="https://picsum.photos/id/1030/160/120" alt="작품4" />
+      </div>
+    </section>
+    <section class="contact">
+      <h2>연락처</h2>
+      <p>Email: songzhixing78@gmail.com</p>
+      <p>전화: 010-5083-9588</p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 전주링컨미술부 All rights reserved.
+  </footer>
+</body>
+</html>
